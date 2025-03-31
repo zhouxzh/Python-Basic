@@ -353,7 +353,7 @@ print(sorted(students, key=lambda x: (-x[1], x[0])))
 
 ```python combined_usage.py
 # 数据处理管道：map -> filter -> sorted
-data = ["Grade:85", "invalid", "Grade:92", "Grade:100A"]
+data = ["Grade:85", "Grade:92", "Grade:100"]
 
 # 步骤分解：
 processed = map(lambda s: s.split(":")[1], data)          # ['85', 'invalid', '92', '100A']

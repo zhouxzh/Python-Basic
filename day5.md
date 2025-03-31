@@ -1,6 +1,35 @@
 # Day 5：Numpy数值计算实践（3学时）
 
 ## 1. Numpy库简介与数组创建
+NumPy（Numerical Python）是Python中用于科学计算的核心库之一，主要用于处理大型多维数组和矩阵运算。它的发展历史可以追溯到以下几个方面：
+
+1. **早期的Python科学计算**：在NumPy出现之前，Python的科学计算主要依赖于Numeric库，这是由Jim Hugunin在1995年开发的。Numeric提供了一些基本的数组操作功能，但在性能和功能上有一定局限性。
+
+2. **Numarray的出现**：为了克服Numeric的一些问题，Numarray库在2001年被开发出来。Numarray在功能上有所增强，但同时也引入了一些兼容性问题，导致社区的分裂。
+
+3. **NumPy的诞生**：为了解决Numeric和Numarray之间的兼容性问题，并统一科学计算库，Travis Oliphant（NumPy的主要开发者）在2005年将Numeric和Numarray的优良特性合并，创建了NumPy。NumPy不仅继承了Numeric的底层设计，还引入了Numarray的许多高级功能，并大大提高了性能。
+
+4. **持续发展与广泛应用**：自NumPy发布以来，它迅速成为Python科学计算生态系统的基石。许多其他重要的科学计算库（如SciPy、Pandas、Matplotlib等）都依赖于NumPy。NumPy的持续发展也带来了许多新特性，如广播机制、通用函数（ufunc）等，使得它在数据科学、机器学习、物理学、工程学等领域得到广泛应用。
+
+5. **现代NumPy**：如今，NumPy仍然是Python生态系统中不可或缺的一部分，并且持续进行优化和扩展。它不仅在学术界和工业界广泛使用，还得到了全球开发者社区的积极贡献。
+
+以下是一个简单的NumPy代码示例：
+
+```python numpy_example.py
+import numpy as np
+
+# 创建一个一维数组
+a = np.array([1, 2, 3, 4, 5])
+
+# 创建一个二维数组
+b = np.array([[1, 2, 3], [4, 5, 6]])
+
+# 数组的基本操作
+print(a + 10)  # 每个元素加10
+print(b * 2)   # 每个元素乘以2
+```
+
+NumPy的发展历史展示了它如何从一个简单的数组操作库演变为Python科学计算的核心工具之一。
 
 ### 基础数组创建示例
 ```python numpy_demo.py
